@@ -23,7 +23,7 @@ p {
 button, input {
   outline-color: transparent;
 }
-button {
+.button {
   border: 0;
   padding: 8px;
   border-radius: 4px;
@@ -33,6 +33,23 @@ button {
 }
 
 /* navbar */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav h1 {
+  text-transform: capitalize;
+  color: var(--primary);
+  text-decoration: none;
+  margin-right: auto;
+}
+header nav a {
+  margin: 0 1rem;
+}
+header nav .shadow-button {
+  background: transparent;
+  border: 2px solid var(--primary);
+}
 
 
 /* page content */
