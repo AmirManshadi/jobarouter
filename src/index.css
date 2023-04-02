@@ -23,6 +23,10 @@ p {
 button, input {
   outline-color: transparent;
 }
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 .button {
   border: 0;
   padding: 8px;
