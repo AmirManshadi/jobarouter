@@ -6,8 +6,8 @@ const Navbar = () => {
 			<h1 className="logo">
 				<NavLink to="/">jobarouter</NavLink>
 			</h1>
-			<NavLink className="button " to="/">home</NavLink>
-			<NavLink className="button shadow-button" to="/about">about</NavLink>
+			<NavLink className="button" to="/">home</NavLink>
+			<NavLink className="button" to="/about">about</NavLink>
 		</nav>
 	);
 };
