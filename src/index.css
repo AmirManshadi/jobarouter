@@ -1,76 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --primary: #bc4123;
-  --secondary: #2b3452;
+	--primary: #bc4123;
+	--secondary: #2b3452;
 }
 *,
 *::after,
 *::before {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-  padding: 20px;
-  font-family: "Poppins";
-  background: var(--secondary);
+	padding: 20px;
+	font-family: "Poppins";
+	background: var(--secondary);
 }
 p {
-  margin: 20px 0;
+	margin: 20px 0;
 }
-button, input {
-  outline-color: transparent;
+button,
+input {
+	outline-color: transparent;
 }
 a {
-  color: inherit;
-  text-decoration: inherit;
+	color: inherit;
+	text-decoration: inherit;
 }
 .button {
-  border: 0;
-  padding: 8px;
-  border-radius: 4px;
-  color: white;
-  background: var(--primary);
-  cursor: pointer;
+	border: 2px solid var(--primary);
+	padding: 8px;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+}
+.button.active {
+	background: var(--primary);
 }
 
 /* navbar */
 header nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 header nav h1 {
-  text-transform: capitalize;
-  font-size: 2rem;
-  text-decoration: none;
-  margin-right: auto;
-  border-bottom: 2px solid var(--primary);
+	text-transform: capitalize;
+	font-size: 2rem;
+	text-decoration: none;
+	margin-right: auto;
+	border-bottom: 2px solid var(--primary);
 }
 header nav a {
-  margin: 0 1rem;
+	margin: 0 1rem;
 }
-header nav .shadow-button {
-  background: transparent;
-  border: 2px solid var(--primary);
-}
-
 
 /* page content */
 
-
 /* help layout */
-
 
 /* faq */
 
-
 /* careers list */
 
-
 /* careers details */
-
 
 /* breadcrumbs */
