@@ -1,6 +1,14 @@
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+
+
 function App() {
   return (
-    <h1>hello world</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home/>}/>
+        <Route path="about" element={<About/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
