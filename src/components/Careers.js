@@ -7,7 +7,7 @@ const Careers = () => {
 		<>
 			{careers.map((career) => (
 				<Link
-					path="/"
+					to="/"
 					key={career.id}
 				>
 					<h3>{career.title}</h3>
