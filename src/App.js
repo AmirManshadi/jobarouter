@@ -9,7 +9,8 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About";
 
-
+// layouts
+import RootLayout from "./layouts/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
