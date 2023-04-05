@@ -5,6 +5,9 @@ import {
 	Route,
 } from "react-router-dom";
 
+// components
+import Careers from "./components/Careers";
+
 // pages
 import Home from "./pages/Home";
 import About from "./pages/About";
