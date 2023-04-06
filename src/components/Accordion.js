@@ -2,17 +2,17 @@ import chevron from "../assets/icons8-chevron-left-96.png"
 
 const Accordion = ({ question, answer }) => {
 	function handleClick(e) {
-		const { currentTarget: target } = e
-		const targetContent = e.currentTarget.parentElement.nextSibling
-		targetContent.classList.toggle("collapse")
+		const {
+			currentTarget: { parentElement: target }
+		} = e
 		target.classList.toggle("collapse")
 	}
 
 	return (
 		<div className="accordion">
-			<div className="accordion-header">
+			<div className="accordion-header" onClick={handleClick}>
 				<h4 className="accordion-title">{question}</h4>
-				<span className="accordion-icon" onClick={handleClick}>
+				<span className="accordion-icon">
 					<img src={chevron} />
 				</span>
 			</div>
