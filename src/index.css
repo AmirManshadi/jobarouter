@@ -52,17 +52,53 @@ header nav h1 {
 	margin-right: auto;
 	border-bottom: 2px solid var(--primary);
 }
-header nav a {
+header nav > a {
 	margin: 0 1rem;
 }
 
 /* page content */
 
+main {
+	max-width: 1300px;
+	margin: 2rem auto;
+}
+
 /* help layout */
+
+.help-section .btn-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+.help-section .btn-group a {
+	width: 8rem;
+	text-align: center;
+}
 
 /* faq */
 
 /* careers list */
+
+.careers-layout .careers {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+	gap: 1rem;
+}
+.careers-layout .careers a {
+	background-color: #373f5c;
+	border-radius: 4px;
+	padding: 1rem;
+	transition: background 300ms;
+}
+.careers-layout .careers a:hover {
+	background-color: #323755;
+}
+.careers-layout .careers a p {
+	margin: 1rem 0 0;
+}
 
 /* careers details */
 
