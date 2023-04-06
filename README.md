@@ -17,7 +17,7 @@ You may also see any lint errors in the console.
 ### `npm run json-server`
 
 Starts a local server with json-server on port 5500 containing the /data/db.json file.\
-Open [http://localhost:5500](http://localhost:5500) to view it in your browser.
+Open [http://localhost:5500/careers](http://localhost:5500/careers) to view it in your browser.
 
 ### `npm test`
 
