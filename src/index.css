@@ -79,6 +79,49 @@ main {
 
 /* faq */
 
+.faq {
+  margin-top: 2rem;
+}
+.faq .accordion {
+  margin: 1rem 0;
+}
+.faq .accordion *::selection {
+  background-color: transparent;
+}
+.faq .accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  padding: .5rem 1rem;
+  margin: 1rem 0 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.faq .accordion .accordion-header span {
+  width: 1.5rem;
+  rotate: 180deg;
+  transition: rotate 300ms;
+}
+.faq .accordion.collapse .accordion-header span {
+  rotate: 0deg;
+}
+.faq .accordion .accordion-header span svg {
+  width: 100%;
+  display: block;
+  fill: #fff;
+}
+.faq .accordion .accordion-content {
+  overflow: hidden;
+  height: 0;
+  transition: height 300ms;
+}
+.faq .accordion.collapse .accordion-content {
+  overflow: hidden;
+  height: 100px;
+}
+
 /* contact us */
 
 .contact form {
