@@ -12,7 +12,7 @@ import Careers from "./components/Careers";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/Faq";
-import Contact from "./pages/ContactUs";
+import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 
 // layouts
@@ -32,7 +32,7 @@ const router = createBrowserRouter(
 
       <Route path="help" element={<HelpLayout />}>
         <Route path="faq" element={<Faq />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<ContactUs />} />
       </Route>
 
       <Route path="careers" element={<CareersLayout />}>
