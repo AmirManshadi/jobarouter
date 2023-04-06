@@ -79,6 +79,73 @@ main {
 
 /* faq */
 
+/* contact us */
+
+.contact form {
+	max-width: 400px;
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0.5rem;
+	justify-content: flex-start;
+}
+.contact form .input-group {
+	display: flex;
+	gap: 1rem;
+}
+.contact form .input-group > input,
+.contact form .input-group > button,
+.contact form .input-group > textarea {
+	flex-grow: 1;
+	padding: 0.7rem 0.5rem;
+	color: white;
+	font-size: 14px;
+	border: 3px solid var(--primary);
+	background-color: var(--secondary);
+	outline-width: 0;
+	border-radius: 4px;
+	transition: background 300ms, border-color 300ms;
+}
+.contact form .input-group > input:focus-visible,
+.contact form .input-group > textarea:focus-visible {
+	border-color: #fff;
+}
+.contact form .input-group > input::placeholder,
+.contact form .input-group > textarea::placeholder {
+	font-family: "Poppins";
+	color: #fff8;
+}
+.contact form .input-group > textarea {
+	height: 10rem;
+}
+.contact form .input-group button {
+	font-family: "Poppins";
+	background-color: var(--primary);
+	cursor: pointer;
+}
+.contact form .input-group button:hover,
+.contact form .input-group button:focus-visible {
+	background-color: #e04f2b;
+	border-color: #e04f2b;
+}
+
+.contact form .btn-group {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+}
+.contact form .btn-group a {
+	width: 2rem;
+}
+.contact form .btn-group svg {
+	fill: var(--primary);
+	transition: fill 300ms;
+}
+.contact form .btn-group a:hover svg {
+	fill: #e04f2b;
+}
+
 /* careers list */
 
 .careers-layout .careers {
