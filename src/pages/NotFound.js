@@ -8,7 +8,7 @@ const NotFound = () => {
 			<p>
 				navigate to the{" "}
 				<Link
-					path="/"
+					to="/"
 					style={{ textDecoration: "underline" }}
 				>
 					homepage
