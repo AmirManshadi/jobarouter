@@ -80,46 +80,46 @@ main {
 /* faq */
 
 .faq {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 .faq .accordion {
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 .faq .accordion *::selection {
-  background-color: transparent;
+	background-color: transparent;
 }
 .faq .accordion .accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
-  background-color: var(--primary);
-  padding: .5rem 1rem;
-  margin: 1rem 0 0;
-  border-radius: 4px;
-  cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
+	background-color: var(--primary);
+	padding: 0.5rem 1rem;
+	margin: 1rem 0 0;
+	border-radius: 4px;
+	cursor: pointer;
 }
 .faq .accordion .accordion-header span {
-  width: 1.5rem;
-  rotate: 180deg;
-  transition: rotate 300ms;
+	width: 1.5rem;
+	rotate: 180deg;
+	transition: rotate 300ms;
 }
 .faq .accordion.collapse .accordion-header span {
-  rotate: 0deg;
+	rotate: 0deg;
 }
 .faq .accordion .accordion-header span svg {
-  width: 100%;
-  display: block;
-  fill: #fff;
+	width: 100%;
+	display: block;
+	fill: #fff;
 }
 .faq .accordion .accordion-content {
-  overflow: hidden;
-  height: 0;
-  transition: height 300ms;
+	overflow: hidden;
+	height: 0;
+	transition: height 300ms;
 }
 .faq .accordion.collapse .accordion-content {
-  overflow: hidden;
-  height: 100px;
+	overflow: hidden;
+	height: 100px;
 }
 
 /* contact us */
@@ -197,17 +197,20 @@ main {
 	margin: 1rem 0;
 	gap: 1rem;
 }
-.careers-layout .careers a {
+.careers-layout .careers > a {
 	background-color: #373f5c;
 	border-radius: 4px;
 	padding: 1rem;
 	transition: background 300ms;
 }
-.careers-layout .careers a:hover {
+.careers-layout .careers > a:hover {
 	background-color: #323755;
 }
 .careers-layout .careers a p {
 	margin: 1rem 0 0;
+}
+.careers-layout .careers .error-message a {
+	text-decoration: underline;
 }
 
 /* careers details */
