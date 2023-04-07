@@ -1,7 +1,7 @@
 const Home = () => {
 	return (
 		<>
-			<h1>home page</h1>
+			<h1>welcome</h1>
 			<p>
 				Eum nulla quisquam debitis ex id reiciendis aut. Et iste voluptatibus
 				omnis aliquam. Ut id recusandae autem.
