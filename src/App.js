@@ -5,15 +5,13 @@ import {
 	Route,
 } from "react-router-dom"
 
-// components
-import Careers from "./components/Careers"
-
 // pages
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Faq from "./pages/Faq"
 import ContactUs from "./pages/ContactUs"
 import NotFound from "./pages/NotFound"
+import Careers from "./pages/Careers"
 import CareerDetail from "./pages/CareerDetail"
 import CareerError from "./pages/CareerError"
 
