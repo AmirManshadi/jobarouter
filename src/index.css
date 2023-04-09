@@ -189,7 +189,7 @@ main {
 	fill: #e04f2b;
 }
 
-/* careers list */
+/* careers */
 
 .careers-layout .careers {
 	display: flex;
@@ -213,6 +213,19 @@ main {
 	text-decoration: underline;
 }
 
-/* careers details */
-
 /* breadcrumbs */
+
+.breadcrumbs {
+  margin: .5rem 0;
+  color: #fff8;
+}
+.breadcrumbs .breadcrumb:hover {
+  color: #fff;
+}
+.breadcrumbs span {
+  margin: 0 10px;
+  cursor: default;
+}
+.breadcrumbs span:last-child {
+  display: none;
+}
