@@ -148,7 +148,6 @@ main {
 	background-color: var(--secondary);
 	outline-width: 0;
 	border-radius: 4px;
-	transition: background 300ms, border-color 300ms;
 }
 .contact form .input-group > input:focus-visible,
 .contact form .input-group > textarea:focus-visible {
@@ -183,7 +182,6 @@ main {
 }
 .contact form .btn-group svg {
 	fill: var(--primary);
-	transition: fill 300ms;
 }
 .contact form .btn-group a:hover svg {
 	fill: #e04f2b;
@@ -198,19 +196,24 @@ main {
 	gap: 1rem;
 }
 .careers-layout .careers > a {
-	background-color: #373f5c;
+	background-color: #0004;
 	border-radius: 4px;
 	padding: 1rem;
-	transition: background 300ms;
 }
 .careers-layout .careers > a:hover {
-	background-color: #323755;
+	background-color: #0001;
 }
 .careers-layout .careers a p {
 	margin: 1rem 0 0;
 }
 .careers-layout .careers .error-message a {
 	text-decoration: underline;
+}
+
+.careers-layout .career-detail {
+  background-color: #0004;
+  border-radius: 4px;
+  padding: 1rem;
 }
 
 /* breadcrumbs */
