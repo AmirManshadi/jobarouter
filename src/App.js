@@ -23,6 +23,7 @@ import CareersLayout from "./layouts/CareersLayout"
 // utilities
 import getCareers from "./utils/getCareers"
 import careerLoader from "./utils/careerLoader"
+import contactFormAction from "./utils/contactFormAction"
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -32,7 +33,7 @@ const router = createBrowserRouter(
 
 			<Route path="help" element={<HelpLayout />}>
 				<Route path="faq" element={<Faq />} />
-				<Route path="contact" element={<ContactUs />} />
+				<Route path="contact" element={<ContactUs />} action={contactFormAction}/>
 			</Route>
 
 			<Route

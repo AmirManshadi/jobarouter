@@ -1,28 +1,28 @@
-import { Link } from "react-router-dom"
+import { Form, Link, useActionData } from "react-router-dom"
 
 const ContactUs = () => {
+	const data = useActionData()
+
 	return (
 		<div className="contact">
-			<form method="post">
+			<Form method="post" action="/help/contact">
 				<div className="input-group">
-					<input type="text" placeholder="first name" required />
-					<input type="text" placeholder="last name" required />
+					<input type="text" name="fname" placeholder="first name" required />
+					<input type="text" name="lname" placeholder="last name" required />
 				</div>
 				<div className="input-group">
-					<input type="email" placeholder="enter your email" required />
+					<input
+						type="email"
+						name="email"
+						placeholder="enter your email"
+						required
+					/>
 				</div>
 				<div className="input-group">
-					<textarea placeholder="anything (optional)"></textarea>
+					<textarea name="message" placeholder="anything (optional)"></textarea>
 				</div>
 				<div className="input-group">
-					<button
-						type="submit"
-						onClick={e => {
-							e.preventDefault()
-						}}
-					>
-						submit
-					</button>
+					<button type="submit">submit</button>
 				</div>
 				<div className="btn-group">
 					<Link>
@@ -56,7 +56,7 @@ const ContactUs = () => {
 						</svg>
 					</Link>
 				</div>
-			</form>
+			</Form>
 		</div>
 	)
 }
