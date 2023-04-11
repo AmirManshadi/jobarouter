@@ -85,8 +85,8 @@ main {
 .faq .accordion {
 	margin: 1rem 0;
 }
-.faq .accordion *::selection {
-	background-color: transparent;
+.faq .accordion  {
+  user-select: none;
 }
 .faq .accordion .accordion-header {
 	display: flex;
