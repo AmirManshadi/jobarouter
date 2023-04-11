@@ -10,7 +10,7 @@ const Breadcrumbs = () => {
 			currentLink += `/${crumb}`
 			return (
 				<div className="crumb">
-					<Link to={currentLink}>{crumb}</Link>
+					<Link to={currentLink} key={crumb}>{crumb}</Link>
 				</div>
 			)
 		})
