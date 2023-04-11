@@ -220,15 +220,15 @@ main {
 
 .breadcrumbs {
   margin: .5rem 0;
+  display: flex;
+}
+.breadcrumbs .crumb {
   color: #fff8;
 }
-.breadcrumbs .breadcrumb:hover {
+.breadcrumbs .crumb:hover {
   color: #fff;
 }
-.breadcrumbs span {
-  margin: 0 10px;
-  cursor: default;
-}
-.breadcrumbs span:last-child {
-  display: none;
+.breadcrumbs .crumb::after {
+  content: ">";
+  margin: 0 .5rem;
 }

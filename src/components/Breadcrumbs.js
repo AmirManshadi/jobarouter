@@ -1,29 +1,20 @@
-import { NavLink, useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const Breadcrumbs = () => {
 	const { pathname } = useLocation()
-	let breadcrumb = []
-	const paths = pathname
+	let currentLink = ""
+	const crumbs = pathname
 		.split("/")
 		.filter(crumb => crumb !== "")
 		.map(crumb => {
-			breadcrumb.push(`/${crumb}`)
-			return breadcrumb.join("")
+			currentLink += `/${crumb}`
+			return (
+				<div className="crumb">
+					<Link to={currentLink}>{crumb}</Link>
+				</div>
+			)
 		})
-	return (
-		<div className="breadcrumbs">
-			{paths.map((path, i) => {
-				return (
-					<>
-						<NavLink to={path} key={path} className="breadcrumb">
-							{breadcrumb[i].split("/").at(-1)}
-						</NavLink>
-            <span>-</span>
-					</>
-				)
-			})}
-		</div>
-	)
+	return <div className="breadcrumbs">{crumbs}</div>
 }
 
 export default Breadcrumbs
